@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+		http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+		
+<!-- ___________________________________________This is our bean ______________________________________________ -->
+<!-- ___________________________________________property injections of collection______________________________-->	
+	
+	
+	<!--property injections of List-->
+	
+	<bean name="emp" class="com.spring.SpringFramework.collection.Employee">
+		<property name="name" value="Priyanka" />
+		
+		<property name="phoneNo">
+			<list>
+				<value>86058721</value>
+				<value>787989809</value>
+				<value>799898090</value>
+			</list>
+		</property>
+		
+		<!--property injections of set-->
+	
+		<property name="address">
+			<set>
+				<value>Pune</value>
+				<value>Beed</value>
+				<value>Mumbai</value>
+			</set>
+		</property>
+		
+		<!--property injections of map-->
+	
+		<property name="courses">
+			<map>
+				<entry key="java" value="2months" />
+				<entry key="python" value="6months"/>
+				<entry key="c" value="5months"/>
+			</map>
+		</property>
+	</bean>
+	
+</beans>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+		http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+		
+<!-- ___________________________________________This is our bean ______________________________________________ -->
+	
+	<!--property injections using value tag-->
+	
+	<!-- <bean class="com.spring.SpringFramework.Student" name="student1">
+		
+		<property name="studId">
+			<value>123</value>
+		</property>
+		
+		<property name="studName">
+			<value>Priyanka</value>
+		</property>
+		
+		<property name="city">
+			<value>Beed</value>
+		</property>
+		
+	</bean>
+	
+	-->
+	
+	<!--property injections using value attribute-->
+    
+    <!--  <bean class="com.spring.SpringFramework.Student" name="student1">
+    
+    	<property name="studId" value="123"/>
+        <property name="studName" value="Priyanka"/>
+        <property name="city" value="Pune"/>
+    
+    </bean> -->
+    
+    <!--property injections using p schema-->
+    <bean class="com.spring.SpringFramework.Student" name="student1" p:studId="123" p:studName="Priyanka" p:city="Pune"></bean>
+
+</beans>
